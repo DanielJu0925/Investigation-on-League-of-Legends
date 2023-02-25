@@ -4,6 +4,25 @@ by Bofu Zou and Zhuoxuan Ju
 
 ## Introduction
 
+This original dataset records the League of Legends 2022 global professional league data. These professional leagues, especially the tier-one professional league, represent League of Legends matchups at the highest skill levels in the fairest of circumstances. However, we found that the two sides (blue and red) of a game had different win rates under different leagues in tier-one league.
+    For instance, the PCS league has an overall 60% winrate on the blue side. The question is: Is there a relationship between the different leagues and the winrates of the two sides?
+We are interested in the tier 1 leagues'winning rate from the dataset. The reason we choose this aspect is because that question comes from the first season of League of Legneds games, and it is something normal players can feel relate with. We believe that we are not the only one who interested in this question. Also, our study can extend to numbers of specific studies that can build on our study.
+
+This dataset originally has 149232 rows and 123 columns. 
+The relevant columns are listed below:
+
+- gameid: This is the id for each match.
+- datacompleteness: This column is a categorical column with whether the data is completely reported
+- league: the different leagues from around the world
+- side: the side that each group is assigned, blue or red
+- playername: the player's id and the team's id
+- result: whether this team is win or lose
+- towers: the number of towers that each team destoried
+- team kpm: this is for each team's kill per minute in each game
+- totalgold: this is the gold(money) that each play and team earned in each game
+
+
+
 
 ## Cleaning and EDA
 
@@ -24,12 +43,14 @@ The head of the cleaned dataframe is from the code below:
 
 
 ### Univariate Analysis
+
 <iframe src="assets/league_distribution.html" width=800 height=600 frameBorder=0></iframe>
 
 In this pie chart, we are looking for which the tier 1 league has the most number of match played. It seems like LPL has the most game of matches played in 2022, and LCK has the second most game played in 2022. We can analysis further on the popularity of League of Legends in differet countries.
 
 
 ### Bivariate Analysis
+
 <iframe src="assets/tkpm_win_lose.html" width=800 height=600 frameBorder=0></iframe>
 
 For this bar chart, we are interested in the game result and the team kill per minute in tier 1 leagues. In order to have a better view of the data and distribution, we have two groups. The win groups seem to have a higher team kill per minute, and the lose group have a lower team kill per minute. From the plot, we can know team kill per minute is indeed one important element to determine the result of that match.
@@ -40,6 +61,7 @@ To further explore the relationship of team kill per minute, we decide to see ho
 
 
 ### Interesting Aggregates
+
 The pivot table will present from the code:
     `print(pivot_1.to_markdown())`
 
@@ -61,6 +83,7 @@ This pivot table explore the relationship between mean of total gold received wi
 
 
 ## Hypothesis Testing
+
 The question we raised at the beginning is that is there a relationship between the different leagues and the winrates of the two sides?
 Since we have found that several leagues have a abnormally higher winrates on the blue side, especially PCS league, we are going to 
 perform a hypothesis test to find if the PCS blue side winrate is due to random chance (under the populaton distribution)
