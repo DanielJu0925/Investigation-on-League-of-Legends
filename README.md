@@ -99,7 +99,7 @@ For the dependent column part, we choose the columns `monsterkillsownjungle` and
 
 Since column `league` is a categorical, we choose total variance distance as the test statistic. The observed statistic we found is 0.946987951807229. After 500 times of permutations, we have the tvd with size of 500. The p-value from the test statistic is 0.0. So we can conclude that we reject the null hypothesis and favors in alternative hypothesis. Therefore, the missingness of column `monsterkillsownjungle` is denpendent on the column `league`.
 
-<iframe src="missing_fig.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="assets/missing_fig.html" width=800 height=600 frameBorder=0></iframe>
 
 #### Independent Relationship
 
@@ -107,7 +107,7 @@ For the independent column part, we choose the columns `monsterkillsownjungle` a
 
 The column `kills` is a numerical. Therefore, we use absolute difference in mean as test statistic. The observed value from our test statistic is 0.15273388711023372, and we perform 500 times of our permutation test. The p-value from our permutation test is 0.43. Thus, we fail to reject the null hypythesis. So we can state the missingness of column `monsterkillsownjungle` is independent on the column `kills`.
 
-<iframe src="independent_fig.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="assets/independent_fig.html" width=800 height=600 frameBorder=0></iframe>
 
 ## Hypothesis Testing
 
