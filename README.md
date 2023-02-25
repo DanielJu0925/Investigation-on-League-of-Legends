@@ -107,7 +107,7 @@ For the independent column part, we choose the columns `monsterkillsownjungle` a
 
 The column `kills` is a numerical. Therefore, we use absolute difference in mean as test statistic. The observed value from our test statistic is 0.15273388711023372, and we perform 500 times of our permutation test. The p-value from our permutation test is 0.43. Thus, we fail to reject the null hypythesis. So we can state the missingness of column `monsterkillsownjungle` is independent on the column `kills`.
 
-<iframe src="assets/independent_fig.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="assets/indenpendent_fig.html" width=800 height=600 frameBorder=0></iframe>
 
 ## Hypothesis Testing
 
