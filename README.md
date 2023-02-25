@@ -30,9 +30,32 @@ In this pie chart, we are looking for which the tier 1 league has the most numbe
 
 
 ### Bivariate Analysis
+<iframe src="assets/tkpm_win_lose.html" width=800 height=600 frameBorder=0></iframe>
+
+For this bar chart, we are interested in the game result and the team kill per minute in tier 1 leagues. In order to have a better view of the data and distribution, we have two groups. The win groups seem to have a higher team kill per minute, and the lose group have a lower team kill per minute. From the plot, we can know team kill per minute is indeed one important element to determine the result of that match.
+
 <iframe src="assets/tkpm_league.html" width=800 height=600 frameBorder=0></iframe>
 
-This bar chart is looking at the team kill per minute in different tier 1 leagues. We can have a clear view of the differences in team kill per minute in different leagues. Specifically, LPL has the highest team kill per minute, and we can know their matches contain more fights comparing to other leagues.
+To further explore the relationship of team kill per minute, we decide to see how it can differ in different leagues. This bar chart is looking at the team kill per minute in different tier 1 leagues. We can have a clear view of the differences in team kill per minute in different leagues. Specifically, LPL has the highest team kill per minute, and we can know their matches contain more fights comparing to other leagues.
+
+
+### Interesting Aggregates
+The pivot table will present from the code:
+    `print(pivot_1.to_markdown())`
+
+| league   |    lose |     win |
+|:---------|--------:|--------:|
+| CBLOL    | 54071.8 | 63380.4 |
+| LCK      | 55021   | 64591.8 |
+| LCS      | 54065.9 | 63549.6 |
+| LEC      | 54671.5 | 64256.1 |
+| LJL      | 51361.1 | 62458.3 |
+| LLA      | 54236   | 63872.9 |
+| LPL      | 52247.9 | 62091.7 |
+| PCS      | 49391.1 | 60657.5 |
+| VCS      | 50856.2 | 60940.1 |
+
+This pivot table explore the relationship between mean of total gold received with the game result of tier 1 leagues. As we can see, the winning games' mean of total gold received is way higher than the losing column. From this pivot table, we can know the gold received during the game is one essential component to win the match.
 
 ## Assessment of Missingness
 
