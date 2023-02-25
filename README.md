@@ -61,3 +61,26 @@ This pivot table explore the relationship between mean of total gold received wi
 
 
 ## Hypothesis Testing
+The question we raised at the beginning is that is there a relationship between the different leagues and the winrates of the two sides?
+Since we have found that several leagues have a abnormally higher winrates on the blue side, especially PCS league, we are going to 
+perform a hypothesis test to find if the PCS blue side winrate is due to random chance (under the populaton distribution)
+
+
+Null hypothesis: Blue side winrate and leauges in the tie-one professional leagues are not related: 
+        the high winrate of blue side in PCS league is due to random chance.
+Alternative hypothesis: Blue side winrate and tie-one professional leagues are related: 
+        the high winrate of blue side in PCS league is not due to random chance.
+
+        
+We will repeatedly sample (without replacement) the number of PCS games (271) from the population and 
+compute the blue side winrates for 100000 times. The blueside winrates would be our test statistic, 
+and the significance level is set to 5% which is a commonly used level.
+
+
+After the computation of the test statistic, the p-value we got from comparing the test-statistic and 
+observed statistic is around 0.0039 to 0.0048, which is lower than the significance level of 0.05. 
+Thus, we are able to reject the null hypothesis. However, we cannot say that there is a relationship 
+between the blue side winrates and leagues since it is statistical test instead of randomized controlled trials.
+It could still be a strong evidence if we try to solve the main question further in the future.
+The leagues where the games are held still have a great probabiltiy to effect the winrates of two sides, 
+and the PCS league in the hypothesis test is a great example to examine that
