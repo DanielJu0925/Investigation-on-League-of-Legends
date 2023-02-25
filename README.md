@@ -1,4 +1,4 @@
-# Blue side Winrates in Tier-one Professional League
+
 
 by Bofu Zou and Zhuoxuan Ju
 
