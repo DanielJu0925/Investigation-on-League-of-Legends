@@ -31,6 +31,7 @@ In this pie chart, we are looking for which the tier 1 league has the most numbe
 
 ### Bivariate Analysis
 <iframe src="assets/tkpm_league.html" width=800 height=600 frameBorder=0></iframe>
+
 This bar chart is looking at the team kill per minute in different tier 1 leagues. We can have a clear view of the differences in team kill per minute in different leagues. Specifically, LPL has the highest team kill per minute, and we can know their matches contain more fights comparing to other leagues.
 
 ## Assessment of Missingness
