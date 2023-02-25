@@ -92,7 +92,16 @@ of banning less champions. And we can find that the missingness of "ban5" depend
 
 ### Missingness Dependency
 
+#### Dependent Relationship
+
+For the dependent column part, we choose the columns monsterkillsownjungle and league. From the permutation test, the null hypothesis is that the missingness of the column `monsterkillsownjungle` is independent from the column `league`, and the alternative hypothesis is that they are dependent.
+
+Since column `league` is a categorical, we choose total variance distance as the test statistic. The observed statistic we found is 0.946987951807229. After 500 times of permutations, we have the tvd with size of 500. The p-value from the test statistic is 0.0. So we can conclude that we reject the null hypothesis and favors in alternative hypothesis. Therefore, the missingness of column `monsterkillownjungle` is denpendent on the column `league`.
+
 <iframe src="missing_fig.html" width=800 height=600 frameBorder=0></iframe>
+
+#### Independent Relationship
+
 
 ## Hypothesis Testing
 
