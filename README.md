@@ -6,7 +6,7 @@ by Bofu Zou and Zhuoxuan Ju
 
 This original dataset records the League of Legends 2022 global professional league data. These professional leagues, especially the tier-one professional league, represent League of Legends matchups at the highest skill levels in the fairest of circumstances. However, we found that the two sides (blue and red) of a game had different win rates under different leagues in tier-one league.
     For instance, the PCS league has an overall 60% winrate on the blue side. The question is: Is there a relationship between the different leagues and the winrates of the two sides?
-We are interested in the tier 1 leagues'winning rate from the dataset. The reason we choose this aspect is because that question comes from the first season of League of Legneds games, and it is something normal players can feel relate with. We believe that we are not the only one who interested in this question. Also, our study can extend to numbers of specific studies that can build on our study.
+We are interested in the tier 1 leagues'winning rate from the dataset. The reason we choose this aspect is because that question comes from the first season of League of Legneds games, and it is something normal players can feel relate with. We believe that we are not the only one who interested in this question. By analyzing this dataset, we can have an overall better understanding of competitive games, which will benefit us when we watch pro games and when we playgames outselves (make yourself pro!)
 
 This dataset originally has 149232 rows and 123 columns. 
 The relevant columns are listed below:
