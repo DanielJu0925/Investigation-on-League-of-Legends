@@ -1,4 +1,4 @@
-# "Title of project"
+# "Blue side Winrates in Tier-one Professional League"
 
 by Bofu Zou and Zhuoxuan Ju
 
@@ -20,6 +20,7 @@ The relevant columns are listed below:
 - towers: the number of towers that each team destoried
 - team kpm: this is for each team's kill per minute in each game
 - totalgold: this is the gold(money) that each play and team earned in each game
+- kills: it is the number of kills for each player
 
 
 
@@ -94,14 +95,19 @@ of banning less champions. And we can find that the missingness of "ban5" depend
 
 #### Dependent Relationship
 
-For the dependent column part, we choose the columns monsterkillsownjungle and league. From the permutation test, the null hypothesis is that the missingness of the column `monsterkillsownjungle` is independent from the column `league`, and the alternative hypothesis is that they are dependent.
+For the dependent column part, we choose the columns `monsterkillsownjungle` and `league`. From the permutation test, the null hypothesis is that the missingness of the column `monsterkillsownjungle` is independent from the column `league`, and the alternative hypothesis is that the missingness of column `monsterkillsownjungle` is dependent on the column `league`.
 
-Since column `league` is a categorical, we choose total variance distance as the test statistic. The observed statistic we found is 0.946987951807229. After 500 times of permutations, we have the tvd with size of 500. The p-value from the test statistic is 0.0. So we can conclude that we reject the null hypothesis and favors in alternative hypothesis. Therefore, the missingness of column `monsterkillownjungle` is denpendent on the column `league`.
+Since column `league` is a categorical, we choose total variance distance as the test statistic. The observed statistic we found is 0.946987951807229. After 500 times of permutations, we have the tvd with size of 500. The p-value from the test statistic is 0.0. So we can conclude that we reject the null hypothesis and favors in alternative hypothesis. Therefore, the missingness of column `monsterkillsownjungle` is denpendent on the column `league`.
 
 <iframe src="missing_fig.html" width=800 height=600 frameBorder=0></iframe>
 
 #### Independent Relationship
 
+For the independent column part, we choose the columns `monsterkillsownjungle` and `kills`. From the permutation test, the null hypothesis is that the missingness of the column `monsterkillsownjungle` is independent from the column `kills`, and the alternative hypothesis is that they are dependent.
+
+The column `kills` is a numerical. Therefore, we use absolute difference in mean as test statistic. The observed value from our test statistic is 0.15273388711023372, and we perform 500 times of our permutation test. The p-value from our permutation test is 0.43. Thus, we fail to reject the null hypythesis. So we can state the missingness of column `monsterkillsownjungle` is independent on the column `kills`.
+
+<iframe src="independent_fig.html" width=800 height=600 frameBorder=0></iframe>
 
 ## Hypothesis Testing
 
