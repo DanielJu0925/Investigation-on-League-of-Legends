@@ -11,16 +11,16 @@ We are interested in the tier 1 leagues'winning rate from the dataset. The reaso
 This dataset originally has 149232 rows and 123 columns. 
 The relevant columns are listed below:
 
-- gameid: This is the id for each match.
-- datacompleteness: This column is a categorical column with whether the data is completely reported
-- league: the different leagues from around the world
-- side: the side that each group is assigned, blue or red
-- playername: the player's id and the team's id
-- result: whether this team is win or lose
-- towers: the number of towers that each team destoried
-- team kpm: this is for each team's kill per minute in each game
-- totalgold: this is the gold(money) that each play and team earned in each game
-- kills: it is the number of kills for each player
+- `gameid`: This is the id for each match.
+- `datacompleteness`: This column is a categorical column with whether the data is completely reported
+- `league`: the different leagues from around the world
+- `side`: the side that each group is assigned, blue or red
+- `playername`: the player's id and the team's id
+- `result`: whether this team is win or lose
+- `towers`: the number of towers that each team destoried
+- `team kpm`: this is for each team's kill per minute in each game
+- `totalgold`: this is the gold(money) that each play and team earned in each game
+- `kills`: it is the number of kills for each player
 
 
 
