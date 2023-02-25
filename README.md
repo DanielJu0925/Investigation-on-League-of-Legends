@@ -81,6 +81,18 @@ This pivot table explore the relationship between mean of total gold received wi
 
 ## Assessment of Missingness
 
+### NMAR Analysis
+We noticed that there is missingness in the "ban5" column. There are 5 columns ("ban1" to "ban5") about ban stage during a competitive games. 
+Each team can ban five champions during the ban-pick stage. However, there is no hard rules that require teams to choose no less than five champions during the ban stage.
+Thus, it is reasonable and possible for a team to pick less than five champions. 
+If a team only banned four or fewer champions, the "ban5" column could be a null value since there is not data to fill out for the fifth ban.
+Therefore, the missingness of the "ban5" column is NMAR, the missingness of the values depends on the values themselves.
+If there is additional data like one column that could tell us the coach of a team, the "ban5" column might be a MAR since some coaches have the habit 
+of banning less champions. And we can find that the missingness of "ban5" depends on the coach column instead of the value themselves.
+
+### Missingness Dependency
+
+<iframe src="missing_fig.html" width=800 height=600 frameBorder=0></iframe>
 
 ## Hypothesis Testing
 
