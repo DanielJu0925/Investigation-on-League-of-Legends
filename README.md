@@ -1,4 +1,4 @@
-<title><h1>Blue side Winrates in Tier-one Professional League</h1></title>
+<h1>Blue side Winrates in Tier-one Professional League</h1>
 
 by Bofu Zou and Zhuoxuan Ju
 
