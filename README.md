@@ -133,4 +133,4 @@ Thus, we are able to reject the null hypothesis. However, we cannot say that the
 between the blue side winrates and leagues since it is statistical test instead of randomized controlled trials.
 It could still be a strong evidence if we try to solve the main question further in the future.
 The leagues where the games are held still have a great probabiltiy to effect the winrates of two sides, 
-and the PCS league in the hypothesis test is a great example to examine that
+and the PCS league in the hypothesis test is a great example to examine that.
